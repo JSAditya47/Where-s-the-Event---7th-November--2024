@@ -1,14 +1,14 @@
 import tkinter as tk
 
-def convert_to_cm():
-    cm = float(entry.get()) * 2.54
-    result_label.config(text=str(cm) + " cm ")
-
 root = tk.Tk()
 root.title("Inches to Centimeters Converter")
 root.geometry("400x400") 
 root.configure(bg="#000000")
 
+def convert_to_cm():
+    cm = float(entry.get()) * 2.54
+    result_label.config(text=str(cm) + " cm ")
+    
 instruction_label = tk.Label(root, text="Enter Length in Inches:", font=("Algerian", 22, "bold italic"), fg = "black")
 instruction_label.pack(pady=20) 
 
